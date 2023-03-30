@@ -22,12 +22,37 @@
 }
 
 .container-biografia h2{
+    color: #212529;
     font-size: 40px;
     margin-top: 10px;
 }
 
-#paragrafo-bio{
-    width: 1000px;
+.container-biografia p{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: #6c757d;
+    font-size: 20px;
+}
+
+
+/* Container Research */
+.container-pesquisa{
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-pesquisa h2{
+    color: #212529;
+    font-size: 40px;
+    margin-bottom: 35px;
+    margin-top: 60px;
+ }   
+
+ .container-pesquisa p{
+    width: 80%;
     margin-top: 20px;
     margin-bottom: 80px;
     color: #6c757d;
