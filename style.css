@@ -1,0 +1,66 @@
+/* Configurações Gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Seção Short Bio */
+.container-biografia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-biografia img{
+    margin-top: 70px;
+    width: 240px;
+    height: 255px;
+    border-radius: 50%;
+    border: 7px solid #fff;    
+}
+
+.container-biografia h2{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+#paragrafo-bio{
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: #6c757d;
+    font-size: 20px;
+}
+
+/* Container Contato */
+.container-contato{
+   background-color: #3e3582;
+   text-align: center;
+   padding: 70px 0px;
+   color: white;
+}
+
+.container-contato h2{
+    font-size: 40px;
+    margin-bottom: 35px;
+ }    
+
+.container-contato h4{
+    font-size: 1.5rem;
+    margin: 0px 0px 7px;
+ }
+
+
+/* Footer */
+footer{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.copy{
+    font-size: 90%;
+    line-height: 40px;
+    color: #525557;
+}
