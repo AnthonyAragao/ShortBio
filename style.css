@@ -10,6 +10,36 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Header menu */
+.menu-header{
+    background-color: white;
+}
+
+.menu-header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+
+header li a{
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 24px;
+    color: #525557;
+}
+
+header li a:hover{
+    color: #ff2d75;
+}
+
+
 /* Container */
 .container{
     min-height: 100vh;
@@ -25,7 +55,7 @@ html{
 .container h2{
     color: white;
     font-size: 60px;
-    margin-top: 230px;
+    margin-top: 220px;
 }
 
 .container h4{
