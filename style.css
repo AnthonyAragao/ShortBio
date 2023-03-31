@@ -1,3 +1,4 @@
+
 /* Configurações Gerais */
 *{
     margin: 0;
@@ -192,7 +193,7 @@ header li a:hover{
 
 .container-contato h4{
     font-size: 1.5rem;
-    margin: 0px 0px 7px;
+    margin: 0px 0px 18px;
  }
 
 
@@ -206,4 +207,90 @@ footer{
     font-size: 90%;
     line-height: 40px;
     color: #525557;
+}
+
+
+/* Menu mobile */
+.menu-mobile{
+    display: none;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-mobile nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-mobile ul{
+    list-style-type: none;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+
+.menu-mobile li{
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 24px;
+    color: #525557;
+    padding: 20px 0;
+}
+
+ header li a:hover{
+    color: #ff2d75;
+}
+
+
+.menu-mobile .redes-sociais{
+    display: flex;
+}
+.menu-mobile .redes-sociais img{
+    width: 90px;
+}
+
+.menu-mobile .redes-sociais a{
+    padding-left: 25px;
+    padding-top: 80px;
+}
+
+.container-btn{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.btn-menu{
+    font-size: 30px;
+    padding: 15px 15px;
+    color: #0c192c;
+    background-color: white;
+    border: none;
+    float: right;
+    font: bold;
+    cursor: pointer;
+}
+
+.open{
+    display: block;
+    
+}
+
+
+@media screen and (max-width:870px) {
+    .menu-header{
+        display: none;
+    }
+
+    .container h2{
+        margin-top: 300px;
+    }
+
+    .container-btn{
+        display: block;
+    }
 }
