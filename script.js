@@ -1,9 +1,9 @@
 function animarMenu() {
     let menuMob = document.querySelector('.menu-mobile')
     if (menuMob.classList.contains('open')) {
-    menuMob.classList.remove('open');
+        menuMob.classList.remove('open');
     } else {
-    menuMob.classList.add('open');
+        menuMob.classList.add('open');
     }
 }
     

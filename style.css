@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "San Francisco", sans-serif;
 }
 
 html{
@@ -43,6 +43,7 @@ header li a{
     padding: 0 30px;
     font-size: 24px;
     color: #525557;
+    transition: .3s;
 }
 
 header li a:hover{
@@ -78,12 +79,14 @@ header li a:hover{
     color: white;
     font-size: 60px;
     margin-top: 220px;
+    text-align: center;
 }
 
 .container h4{
     color: white;
     font-size: 20px;
     margin-top: 60px;
+    text-align: center;
 }
 
 .btnBio{
@@ -131,6 +134,7 @@ header li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    word-wrap: break-word;
 }
 
 .container-biografia img{
@@ -153,6 +157,7 @@ header li a:hover{
     margin-bottom: 80px;
     color: #6c757d;
     font-size: 20px;
+    text-align: justify;
 }
 
 
@@ -163,6 +168,7 @@ header li a:hover{
     flex-direction: column;
     align-items: center;
     padding: 80px 0px;
+    word-wrap: break-word;
 }
 
 .container-pesquisa h2{
@@ -176,6 +182,7 @@ header li a:hover{
     margin-top: 20px;
     color: #6c757d;
     font-size: 20px;
+    text-align: justify;
 }
 
 /* Container Contato */
@@ -196,6 +203,9 @@ header li a:hover{
     margin: 0px 0px 18px;
  }
 
+ .container-contato p{
+    font-size: 20px;
+}
 
 /* Footer */
 footer{
@@ -216,7 +226,7 @@ footer{
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 1; 
 }
 
 .menu-mobile nav{
@@ -277,23 +287,65 @@ footer{
 
 .open{
     display: block;
-    
 }
 
 
-@media screen and (max-width:870px) {
+
+/* Media queries */
+@media (max-width: 767px) {
+    .container-btn{
+        display: block;
+    }
+
     .menu-header{
         display: none;
     }
 
     .container h2{
-        margin-top: 300px;
+        margin-top: 200px;
+        font-size: 40px;
+    }
+
+    .container h4{
+        font-size: 16px;
+    }
+    
+    .container-contato h4{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .container-contato p{
+        font-size: 16px;
+    }
+    
+  }
+  
+  /* Estilos para telas de 768px a 991px (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .menu-header{
+        display: none;
+    }
+
+    .container h2{
+        margin-top: 200px;
     }
 
     .container-btn{
         display: block;
     }
+  }
+
+
+/* Estilos para telas maiores que 992px (desktops) */
+@media (min-width: 992px) {
+    .menu-mobile{
+        display: none;
+    }
 }
+
+
+
 
 
 /*  breakpoints */
